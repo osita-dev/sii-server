@@ -7,10 +7,7 @@ import { GoogleGenerativeAI } from "@google/generative-ai";
 dotenv.config();
 
 const app = express();
-app.use(cors({
-    origin: 'https://siigpt.vercel.app/',
-    credentials: true,
-}));
+app.use(cors());
 app.use(bodyParser.json());
 
 // Initialize Gemini
